@@ -1,9 +1,100 @@
-.box-1 {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+@import url("https://static.toss.im/tps/main.css");
+@import url("https://static.toss.im/tps/others.css");
+html > body {
+  font-family: "Toss Product Sans";
 }
-.box-1:hover {
-  background-color: red;
-  width: 102px;
+
+* {
+  box-sizing: border-box;
 }
+
+/* -------------------- header - start -------------------- */
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+header .con {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+}
+header .con-inner {
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  width: 76px;
+  min-width: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+header .logo a {
+  width: 100%;
+}
+header .mb {
+  display: none;
+}
+header .menu-box {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .menu-item {
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  color: #4e5968;
+  display: flex;
+  align-items: center;
+}
+header .menu-item a {
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  color: currentColor;
+  border-radius: 8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+header .menu-item a:hover {
+  background-color: rgba(2, 32, 71, 0.05);
+  color: #0056b3;
+}
+header .menu-lang {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .menu-lang span {
+  color: #d1d6db;
+}
+header .kor {
+  margin-left: 44px;
+  color: #333d4b !important;
+}
+header .eng {
+  color: #b0b8c1 !important;
+}
+
+/* -------------------- header - end -------------------- */
