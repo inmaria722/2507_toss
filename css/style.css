@@ -1,4 +1,9 @@
 .box-1 {
   width: 100px;
   height: 100px;
+  background-color: blue;
+}
+.box-1:hover {
+  background-color: red;
+  width: 102px;
 }
