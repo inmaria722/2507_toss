@@ -8,6 +8,13 @@ html > body {
 * {
     box-sizing: border-box;
 }
+
+.con {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /* -------------------- header - start -------------------- */
 header {
     width: 100vw;
@@ -17,12 +24,6 @@ header {
     top: 0;
     left: 0;
     z-index: 9999;
-
-    .con {
-        max-width: 1140px;
-        height: 100%;
-        margin: 0 auto;
-    }
 
     .con-inner {
         width: 92%;
@@ -63,7 +64,7 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 2px;
     }
 
     .menu-item {
@@ -117,6 +118,10 @@ header {
 /* -------------------- section - start -------------------- */
 section {
     width: 100vw;
+
+    .con {
+        padding: 250px 0 165px 0;
+    }
 }
 
 .sec-1 {
@@ -242,3 +247,49 @@ section {
 
 
 /* -------------------- sec-2 - start -------------------- */
+.sec-2 {
+    .con-inner {
+        position: relative;
+    }
+
+    .title-box {
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: #3182f6;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #191f28;
+        }
+    }
+
+    .p-right {
+        width: 600px;
+        height: 936px;
+        position: absolute;
+        top: 0px;
+        right: -104px;
+
+        img:first-child {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 57%;
+            height: auto;
+            transform: translate3d(-50%, -50%, 0);
+            border-radius: 22px;
+        }
+
+        img:last-child {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
