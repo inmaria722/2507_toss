@@ -270,6 +270,15 @@ section {
     }
 }
 
+.desc {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(51, 61, 75);
+    position: absolute;
+}
+
+
 
 /* -------------------- sec-2 - start -------------------- */
 .sec-2 {
@@ -311,12 +320,7 @@ section {
         left: -104px;
     }
 
-    p {
-        font-size: 23px;
-        font-weight: 600;
-        line-height: 1.5;
-        color: rgb(51, 61, 75);
-        position: absolute;
+    .desc {
         right: 30px;
         bottom: 166px;
     }
@@ -402,3 +406,58 @@ section {
     }
 }
 /* -------------------- sec-3 - end -------------------- */
+
+
+
+/* -------------------- sec-4 - start -------------------- */
+.sec-4 {
+    .con-inner {
+        position: relative;
+    }
+
+    .title-box {
+        margin-bottom: 210px;
+    }
+
+    .phone-box {
+        position: absolute;
+        top: 0;
+        right: -60px;
+
+        .phone {
+            position: relative;
+            width: 600px;
+            height: 936px;
+            
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: rgb(51, 61, 75);
+    }
+
+    .last {
+        margin-bottom: 30px;
+    }
+
+    .gray {
+        color: #8b95a1;
+        margin-left: 10px;
+    }
+
+    .light-gray {
+        color: #d1d6db;
+        margin-left: 10px;
+    }
+}
+/* -------------------- sec-4 - end -------------------- */
+

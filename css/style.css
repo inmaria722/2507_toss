@@ -233,6 +233,14 @@ section {
   color: #191f28;
 }
 
+.desc {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(51, 61, 75);
+  position: absolute;
+}
+
 /* -------------------- sec-2 - start -------------------- */
 .sec-2 .con-inner {
   position: relative;
@@ -265,12 +273,7 @@ section {
   bottom: 0;
   left: -104px;
 }
-.sec-2 p {
-  font-size: 23px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: rgb(51, 61, 75);
-  position: absolute;
+.sec-2 .desc {
   right: 30px;
   bottom: 166px;
 }
@@ -342,3 +345,45 @@ section {
 }
 
 /* -------------------- sec-3 - end -------------------- */
+/* -------------------- sec-4 - start -------------------- */
+.sec-4 .con-inner {
+  position: relative;
+}
+.sec-4 .title-box {
+  margin-bottom: 210px;
+}
+.sec-4 .phone-box {
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+.sec-4 .phone-box .phone {
+  position: relative;
+  width: 600px;
+  height: 936px;
+}
+.sec-4 .phone-box .phone img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sec-4 span {
+  display: flex;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(51, 61, 75);
+}
+.sec-4 .last {
+  margin-bottom: 30px;
+}
+.sec-4 .gray {
+  color: #8b95a1;
+  margin-left: 10px;
+}
+.sec-4 .light-gray {
+  color: #d1d6db;
+  margin-left: 10px;
+}
+
+/* -------------------- sec-4 - end -------------------- */
