@@ -40,7 +40,6 @@ header .con-inner {
   justify-content: space-between;
 }
 header .logo {
-  width: 76px;
   min-width: 24px;
   height: 100%;
   display: flex;
@@ -49,7 +48,7 @@ header .logo {
   margin-right: 24px;
 }
 header .logo a {
-  width: 100%;
+  width: 68px;
 }
 header .mb {
   display: none;
@@ -282,12 +281,23 @@ section {
   position: relative;
   background-color: #f9fafb;
 }
-.sec-3 .free-send {
-  margin: 0 0 150px;
-  display: flex;
+.sec-3 .title-box h2 {
+  margin-bottom: 80px;
+}
+.sec-3 .send {
   width: calc(100% + 30px);
+  display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.sec-3 .free-send, .sec-3 .accounts {
+  margin: 0 0 150px;
+}
+.sec-3 img {
+  width: 100%;
+  height: auto;
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
 }
 .sec-3 .text-box {
   display: flex;
@@ -296,6 +306,8 @@ section {
   padding-left: 38px;
   width: 556px;
   height: 100%;
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
 }
 .sec-3 .text-box p:first-child {
   white-space: nowrap;
@@ -309,3 +321,24 @@ section {
   flex-direction: row;
   justify-content: flex-start;
 }
+.sec-3 .text-box p:first-child span {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  margin-right: 4px;
+}
+.sec-3 .text-box p:nth-child(2) {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: rgb(51, 61, 75);
+}
+.sec-3 .text-box p:last-child {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(107, 118, 132);
+}
+
+/* -------------------- sec-3 - end -------------------- */
