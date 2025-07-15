@@ -387,3 +387,41 @@ section {
 }
 
 /* -------------------- sec-4 - end -------------------- */
+/* -------------------- sec-5 - start -------------------- */
+.sec-5 {
+  background-color: #f9fafb;
+}
+.sec-5 h2 {
+  margin-bottom: 80px;
+}
+.sec-5 .credit-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin: 0px -30px -30px 0px;
+}
+.sec-5 .credit-box .credit {
+  flex-basis: calc(50% - 30px);
+  max-width: calc(50% - 30px);
+  margin: 0 30px 30px 0;
+  height: 400px;
+}
+.sec-5 .credit-box .credit img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+.sec-5 .credit-box .credit p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(51, 61, 75);
+  margin-bottom: 10px;
+}
+.sec-5 .credit-box .credit p:last-child {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(107, 118, 132);
+}
+
+/* -------------------- sec-5 - end -------------------- */
