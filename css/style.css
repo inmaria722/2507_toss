@@ -242,17 +242,12 @@ section {
   position: absolute;
 }
 
-/* -------------------- sec-2 - start -------------------- */
-.sec-2 .con-inner {
-  position: relative;
-  height: 1272px;
-}
-.sec-2 .phone {
+.phone {
   width: 600px;
   height: 936px;
   position: absolute;
 }
-.sec-2 .phone .screen {
+.phone .screen {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -261,10 +256,16 @@ section {
   transform: translate3d(-50%, -50%, 0);
   border-radius: 22px;
 }
-.sec-2 .phone .shadow {
+.phone .shadow {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+/* -------------------- sec-2 - start -------------------- */
+.sec-2 .con-inner {
+  position: relative;
+  height: 1272px;
 }
 .sec-2 .p-right {
   top: 0px;
@@ -571,3 +572,47 @@ section {
 }
 
 /* -------------------- sec-8 - end -------------------- */
+/* -------------------- sec-9 - start -------------------- */
+.sec-9 {
+  background-color: #f9fafb;
+}
+.sec-9 .con {
+  padding: 250px 0 165px 0;
+}
+.sec-9 .con .con-inner {
+  height: 1272px;
+  position: relative;
+}
+.sec-9 .title-box h1 {
+  margin-bottom: 20px;
+}
+.sec-9 .title-box h2 {
+  margin-bottom: 100px;
+}
+.sec-9 .p-left {
+  bottom: 0px;
+  left: -124px;
+}
+.sec-9 .p-right {
+  top: -70px;
+  right: -70px;
+}
+.sec-9 .desc {
+  position: absolute;
+  top: 267px;
+  left: 0px;
+  width: 100vw;
+  color: rgb(78, 89, 104);
+}
+.sec-9 .desc-2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 280px;
+  left: 640px;
+  width: 480px;
+  color: rgb(78, 89, 104);
+}
+
+/* -------------------- sec-9 - end -------------------- */

@@ -278,6 +278,28 @@ section {
     position: absolute;
 }
 
+.phone {
+    width: 600px;
+    height: 936px;
+    position: absolute;
+
+    .screen {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 57%;
+        height: auto;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 22px;
+    }
+
+    .shadow {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 
 /* -------------------- sec-2 - start -------------------- */
@@ -286,35 +308,12 @@ section {
         position: relative;
         height: 1272px;
     }
-
-
-    .phone {
-        width: 600px;
-        height: 936px;
-        position: absolute;
-
-        .screen {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 57%;
-            height: auto;
-            transform: translate3d(-50%, -50%, 0);
-            border-radius: 22px;
-        }
-    
-        .shadow {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-    }
-        
+       
     .p-right {
         top: 0px;
         right: -104px;
     }
-    
+
     .p-left {
         bottom: 0;
         left: -104px;
@@ -689,5 +688,60 @@ section {
         }
     }
 }
-
 /* -------------------- sec-8 - end -------------------- */
+
+
+
+/* -------------------- sec-9 - start -------------------- */
+.sec-9 {
+    background-color: #f9fafb;
+
+    .con {
+        padding: 250px 0 165px 0;
+
+        .con-inner {
+            height: 1272px;
+            position: relative;
+        }
+    }
+
+    .title-box {
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 100px;
+        }
+    }
+
+    .p-left {
+        bottom: 0px;
+        left: -124px;
+    }
+
+    .p-right {
+        top: -70px;
+        right: -70px;
+    }
+
+    .desc {
+        position: absolute;
+        top: 267px;
+        left: 0px;
+        width: 100vw;
+        color: rgb(78, 89, 104);
+    }
+
+    .desc-2 {
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 1.5;
+        position: absolute;
+        bottom: 280px;
+        left: 640px;
+        width: 480px;
+        color: rgb(78, 89, 104);
+    }
+}
+/* -------------------- sec-9 - end -------------------- */
