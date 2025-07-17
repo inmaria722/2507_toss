@@ -58,6 +58,7 @@ header {
         align-items: center;
         justify-content: center;
         margin-right: 24px;
+        animation: 0.5s ease-in-out 0s 1 normal forwards running opacity0to1;
         
         a {
             width: 64px;
@@ -177,6 +178,18 @@ section {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        opacity: 0;
+        animation: 0.5s ease-in-out 1s 1 normal forwards running opacity0to1;
+    }
+
+    @keyframes opacity0to1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     .content__text {
@@ -232,11 +245,46 @@ section {
         cursor: pointer;
         width: 50px;
         height: 50px;
-        margin-bottom: 30px;
+        opacity: 0;
+        scale: .5;
+        margin-bottom: 40px;
+        animation: 3.5s ease-in-out 0s infinite normal forwards running contentBtnUpDown;
 
         div {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    @keyframes contentBtnUpDown {
+        0% {
+            opacity: 0;
+            scale: .5;
+            margin-bottom: 40px;
+        }
+
+        25% {
+            scale: 1;
+            opacity: 1;
+            margin-bottom: 30px;
+        }
+
+        50% {
+            scale: 1;
+            opacity: 1;
+            margin-bottom: 40px;
+        }
+
+        75% {
+            scale: 1;
+            opacity: 1;
+            margin-bottom: 30px;
+        }
+
+        100% {
+            scale: 1;
+            opacity: 0;
+            margin-bottom: 40px;
         }
     }
 
@@ -278,6 +326,8 @@ section {
         line-height: 1.4;
         color: #191f28;
     }
+
+    animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
 }
 
 .desc {
@@ -286,13 +336,17 @@ section {
     line-height: 1.5;
     color: rgb(51, 61, 75);
     position: absolute;
+    opacity: 0;
+    animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
 
 .phone {
     width: 600px;
     height: 936px;
     position: absolute;
-
+    opacity: 0;
+    animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+    
     .screen {
         position: absolute;
         top: 50%;
@@ -302,7 +356,7 @@ section {
         transform: translate3d(-50%, -50%, 0);
         border-radius: 22px;
     }
-
+    
     .shadow {
         position: relative;
         width: 100%;
@@ -310,7 +364,13 @@ section {
     }
 }
 
+.p-right {
+    animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+}
 
+.p-left {
+    animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
+}
 
 /* -------------------- sec-2 - start -------------------- */
 .sec-2 {
@@ -354,7 +414,8 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        opacity: 0;
+        animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
     }
     
     .free-send, .accounts {
@@ -366,6 +427,8 @@ section {
         height: auto;
         flex-basis: calc(50% - 30px);
         max-width: calc(50% - 30px);
+        opacity: 0;
+        animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
     }
 
     .text-box {
@@ -452,10 +515,20 @@ section {
         font-weight: 700;
         line-height: 1.5;
         color: rgb(51, 61, 75);
+        opacity: 0;
     }
 
-    .last {
+    .top {
+        animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+    }
+
+    .mid {
+        animation: 0.5s ease-in-out 2s 1 normal forwards running slideUp;
+    }
+
+    .bottom {
         margin-bottom: 30px;
+        animation: 0.5s ease-in-out 2.5s 1 normal forwards running slideUp;
     }
 
     .gray {
@@ -466,6 +539,10 @@ section {
     .light-gray {
         color: #d1d6db;
         margin-left: 10px;
+    }
+
+    .desc {
+        animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
     }
 }
 /* -------------------- sec-4 - end -------------------- */
@@ -510,6 +587,7 @@ section {
                 font-weight: 600;
                 line-height: 1.5;
                 color: rgb(107, 118, 132);
+                animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
             }
         }
     }
@@ -975,3 +1053,16 @@ footer {
     }
 }
 /* -------------------- footer - end -------------------- */
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 50px, 0px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+}
