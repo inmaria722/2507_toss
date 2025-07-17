@@ -5,6 +5,10 @@ html > body {
   font-family: "Toss Product Sans";
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,7 +58,7 @@ header .logo {
   margin-right: 24px;
 }
 header .logo a {
-  width: 68px;
+  width: 64px;
 }
 header .mb {
   display: none;
