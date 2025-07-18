@@ -492,6 +492,8 @@ section {
 .sec-5 .credit-box .credit img {
   width: 120px;
   margin-bottom: 30px;
+  opacity: 0;
+  animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
 }
 .sec-5 .credit-box .credit p {
   font-size: 28px;
@@ -499,13 +501,14 @@ section {
   line-height: 1.5;
   color: rgb(51, 61, 75);
   margin-bottom: 10px;
+  opacity: 0;
+  animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-5 .credit-box .credit p:last-child {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
   color: rgb(107, 118, 132);
-  animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 
 /* -------------------- sec-5 - end -------------------- */
@@ -537,13 +540,14 @@ section {
 .sec-6 .ph-txt {
   width: 100%;
   position: absolute;
-  left: 50%;
   display: flex;
+  left: 70px;
   justify-content: end;
   max-width: 900px;
   transform: translate(-50%, 0);
   color: #4e5968;
   top: 228px;
+  opacity: 0;
 }
 .sec-6 .ph-txt p {
   font-size: 23px;
@@ -555,11 +559,17 @@ section {
 .sec-6 .left-txt {
   top: 428px;
   justify-content: start;
+  animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
+}
+.sec-6 .right-txt {
+  animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-6 .desc {
   position: static;
   margin: 0 auto;
   text-align: center;
+  opacity: 0;
+  animation: 1s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
 
 /* -------------------- sec-6 - end -------------------- */
@@ -685,6 +695,7 @@ section {
   left: 0px;
   width: 100vw;
   color: rgb(78, 89, 104);
+  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 .sec-9 .desc-2 {
   font-size: 23px;
@@ -695,6 +706,8 @@ section {
   left: 640px;
   width: 480px;
   color: rgb(78, 89, 104);
+  opacity: 0;
+  animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
 
 /* -------------------- sec-9 - end -------------------- */
@@ -719,6 +732,12 @@ section {
 }
 .sec-10 img {
   margin-bottom: 11px;
+  opacity: 0;
+  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+}
+.sec-10 .sec-10__title-box {
+  opacity: 0;
+  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
 }
 .sec-10 .sec-10__title-box h1 {
   font-size: 60px;
@@ -741,6 +760,8 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
+  opacity: 0;
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-10 .business-box li {
   width: 25%;

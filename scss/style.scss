@@ -572,6 +572,8 @@ section {
             img {
                 width: 120px;
                 margin-bottom: 30px;
+                opacity: 0;
+                animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
             }
 
             p {
@@ -580,6 +582,8 @@ section {
                 line-height: 1.5;
                 color: rgb(51, 61, 75);
                 margin-bottom: 10px;
+                opacity: 0;
+                animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
             }
 
             p:last-child {
@@ -587,7 +591,6 @@ section {
                 font-weight: 600;
                 line-height: 1.5;
                 color: rgb(107, 118, 132);
-                animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
             }
         }
     }
@@ -629,13 +632,14 @@ section {
     .ph-txt {
         width: 100%;
         position: absolute;
-        left: 50%;
         display: flex;
+        left: 70px;
         justify-content: end;
         max-width: 900px;
         transform: translate(-50%, 0);
         color: #4e5968;
         top: 228px;
+        opacity: 0;
 
         p {
             font-size: 23px;
@@ -649,12 +653,21 @@ section {
     .left-txt {
         top: 428px;
         justify-content: start;
+        animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
+    }
+
+    .right-txt {
+        animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
+
     }
 
     .desc {
         position: static;
         margin: 0 auto;
         text-align: center;
+        opacity: 0;
+        animation: 1s ease-in-out 1.5s 1 normal forwards running slideUp;
+
     }
 }
 /* -------------------- sec-6 - end -------------------- */
@@ -819,6 +832,8 @@ section {
         left: 0px;
         width: 100vw;
         color: rgb(78, 89, 104);
+        animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
+
     }
 
     .desc-2 {
@@ -830,6 +845,9 @@ section {
         left: 640px;
         width: 480px;
         color: rgb(78, 89, 104);
+        opacity: 0;
+        animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+
     }
 }
 /* -------------------- sec-9 - end -------------------- */
@@ -855,9 +873,14 @@ section {
 
     img {
         margin-bottom: 11px;
+        opacity: 0;
+        animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
     }
 
     .sec-10__title-box {
+        opacity: 0;
+        animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+
         h1 {
             font-size: 60px;
             font-weight: 700;
@@ -882,6 +905,8 @@ section {
         align-items: center;
         justify-content: center;
         width: 100%;
+        opacity: 0;
+        animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 
         li {
             width: 25%;
