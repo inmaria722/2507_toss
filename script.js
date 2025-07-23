@@ -33,12 +33,12 @@ for (let i = 1; i <= 3; i++) {
   });
 }
 
-for (let i = 1; i <= 3; i++) {
-  gsap.to(`.item-title-${i}`, {
+for (let i = 1; i <= 2; i++) {
+  gsap.to(`.item-text-box-${i}`, {
     opacity: 1,
     y: 0,
     scrollTrigger: {
-      trigger: `.item-title-${i}`,
+      trigger: `.item-text-box-${i}`,
       start: "top bottom",
       end: "top center",
       scrub: true
@@ -46,15 +46,24 @@ for (let i = 1; i <= 3; i++) {
   });
 }
 
-for (let i = 1; i <= 3; i++) {
-  gsap.to(`.item-title-${i}`, {
-    opacity: 1,
-    y: 0,
-    scrollTrigger: {
-      trigger: `.item-title-${i}`,
-      start: "top bottom",
-      end: "top center",
-      scrub: true
-    }
-  });
-}
+gsap.to(".item-2 .left-title", {
+  opacity: 1,
+  y: 0,
+  scrollTrigger: {
+    trigger: ".item-2 .left-title",
+    start: "top bottom",
+    end: "top center",
+    scrub: true
+  }
+});
+
+gsap.to(".item-2__right", {
+  opacity: 1,
+  y: 0,
+  scrollTrigger: {
+    trigger: ".item-2__right",
+    start: "top bottom",
+    end: "top center",
+    scrub: true
+  }
+});

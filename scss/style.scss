@@ -719,6 +719,12 @@ section {
 
 /* -------------------- sec-8 - start -------------------- */
 .sec-8 {
+
+    .item-text-box {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
     h1 {
         margin-bottom: 140px;
         font-size: 60px;
@@ -727,13 +733,12 @@ section {
         color: #191f28;
     }
 
+
     .item-title {
         margin-bottom: 24px;
         font-size: 40px;
         font-weight: 700;
         line-height: 1.3;
-        opacity: 0;
-        transform: translatey(10px);
         
         h2 {
             margin-bottom: 5px;
@@ -788,10 +793,17 @@ section {
             img {
                 margin-bottom: 40px;
             }
+
+            .left-title {
+                opacity: 0;
+                transform: translateY(10px);
+            }
         }
 
         .item-2__right {
             margin-top: 122px;
+            opacity: 0;
+            transform: translateY(100px);
             
             img {
                 margin-bottom: 35px;    

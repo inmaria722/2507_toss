@@ -611,6 +611,10 @@ section {
 
 /* -------------------- sec-7 - end -------------------- */
 /* -------------------- sec-8 - start -------------------- */
+.sec-8 .item-text-box {
+  opacity: 0;
+  transform: translateY(10px);
+}
 .sec-8 h1 {
   margin-bottom: 140px;
   font-size: 60px;
@@ -623,8 +627,6 @@ section {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
-  opacity: 0;
-  transform: translatey(10px);
 }
 .sec-8 .item-title h2 {
   margin-bottom: 5px;
@@ -668,8 +670,14 @@ section {
 .sec-8 .item-2 .item-2__left img {
   margin-bottom: 40px;
 }
+.sec-8 .item-2 .item-2__left .left-title {
+  opacity: 0;
+  transform: translateY(10px);
+}
 .sec-8 .item-2 .item-2__right {
   margin-top: 122px;
+  opacity: 0;
+  transform: translateY(100px);
 }
 .sec-8 .item-2 .item-2__right img {
   margin-bottom: 35px;
