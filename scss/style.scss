@@ -16,6 +16,15 @@ html > body {
   border-radius: 10px;
 }
 
+// mixin
+@mixin breakpoint-view($breakpoint) {
+    @if $breakpoint == 'mobile' {
+        @media (639px >= width) {
+            @content;
+        }
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -75,17 +84,6 @@ img {
 .slide-up-25 {
     opacity: 0;
     animation: 0.5s ease-in-out 2.5s 1 normal forwards running slideUp;
-}
-
-
-
-// mixin
-@mixin breakpoint-view($breakpoint) {
-    @if $breakpoint == mobile {
-        @media (639px >= width) {
-            @content;
-        }
-    }
 }
 
 
@@ -433,6 +431,11 @@ section {
         line-height: 1.3;
         color: #3182f6;
         margin-bottom: 30px;
+
+        @include breakpoint-view(mobile) {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
     }
 
     h2 {
@@ -440,6 +443,10 @@ section {
         font-weight: 700;
         line-height: 1.4;
         color: #191f28;
+
+        @include breakpoint-view(mobile) {
+            font-size: 28px;
+        }
     }
 }
 
@@ -450,7 +457,10 @@ section {
     color: rgb(51, 61, 75);
     position: absolute;
     opacity: 0;
-    animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+    
+    @include breakpoint-view(mobile) {
+        font-size: 17px;
+    }
 }
 
 .phone {
@@ -485,21 +495,64 @@ section {
     .con-inner {
         position: relative;
         height: 1272px;
+
+        @include breakpoint-view(mobile) {
+            height: auto;
+        }
     }
        
+    .phone-box {
+        @include breakpoint-view(mobile) {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 587px;
+        }
+    }
+    
+    .phone {
+        @include breakpoint-view(mobile) {
+            margin-left: -40px;
+        }
+    }
+
     .p-right {
         top: 0px;
         right: -104px;
-    }
 
+        @include breakpoint-view(mobile) {
+            position: static;
+            width: 100%;
+            max-width: 375px;
+            flex-shrink: 0;
+            height: auto;
+        }
+    }
+    
     .p-left {
         bottom: 0;
         left: -104px;
+        
+        @include breakpoint-view(mobile) {
+            position: static;
+            flex-shrink: 0;
+            margin-left: -100px;
+            width: 100%;
+            max-width: 375px;
+            height: auto;
+        }
     }
 
     .desc {
         right: 30px;
         bottom: 166px;
+
+        @include breakpoint-view(mobile) {
+            right: 0;
+            bottom: 0;
+            position: static;
+            width: 100%;
+        }
     }
 }
 /* -------------------- sec-2 - end -------------------- */

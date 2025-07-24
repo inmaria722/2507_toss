@@ -36,6 +36,11 @@ img {
   margin: 0 auto;
   padding: 250px 0;
 }
+@media (639px >= width) {
+  .con {
+    padding: 100px 0;
+  }
+}
 
 .con-inner {
   width: 92%;
@@ -367,11 +372,6 @@ section {
     max-width: 268px;
   }
 }
-@media (639px >= width) {
-  .sec-1 .sec-1__part-2 {
-    padding: 100px 0;
-  }
-}
 
 /* -------------------- sec-1 - end -------------------- */
 .title-box h1 {
@@ -381,11 +381,22 @@ section {
   color: #3182f6;
   margin-bottom: 30px;
 }
+@media (639px >= width) {
+  .title-box h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
 .title-box h2 {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.4;
   color: #191f28;
+}
+@media (639px >= width) {
+  .title-box h2 {
+    font-size: 28px;
+  }
 }
 
 .desc {
@@ -395,7 +406,11 @@ section {
   color: rgb(51, 61, 75);
   position: absolute;
   opacity: 0;
-  animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+}
+@media (639px >= width) {
+  .desc {
+    font-size: 17px;
+  }
 }
 
 .phone {
@@ -421,30 +436,67 @@ section {
   height: 100%;
 }
 
-.p-right {
-  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
-}
-
-.p-left {
-  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
-}
-
 /* -------------------- sec-2 - start -------------------- */
 .sec-2 .con-inner {
   position: relative;
   height: 1272px;
 }
+@media (639px >= width) {
+  .sec-2 .con-inner {
+    height: auto;
+  }
+}
+@media (639px >= width) {
+  .sec-2 .phone-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 587px;
+  }
+}
+@media (639px >= width) {
+  .sec-2 .phone {
+    margin-left: -40px;
+  }
+}
 .sec-2 .p-right {
   top: 0px;
   right: -104px;
+}
+@media (639px >= width) {
+  .sec-2 .p-right {
+    position: static;
+    width: 100%;
+    max-width: 375px;
+    flex-shrink: 0;
+    height: auto;
+  }
 }
 .sec-2 .p-left {
   bottom: 0;
   left: -104px;
 }
+@media (639px >= width) {
+  .sec-2 .p-left {
+    position: static;
+    flex-shrink: 0;
+    margin-left: -100px;
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+  }
+}
 .sec-2 .desc {
   right: 30px;
   bottom: 166px;
+}
+@media (639px >= width) {
+  .sec-2 .desc {
+    right: 0;
+    bottom: 0;
+    position: static;
+    width: 100%;
+  }
 }
 
 /* -------------------- sec-2 - end -------------------- */
