@@ -20,6 +20,11 @@ html > body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, span, p {
+    word-break: keep-all;
+    white-space: pre-wrap;
+}
+
 img {
     display: block;
     width: 100%;
@@ -30,6 +35,10 @@ img {
     height: 100%;
     margin: 0 auto;
     padding: 250px 0;
+
+    @include breakpoint-view(mobile) {
+        padding: 100px 0;
+    }
 }
 
 .con-inner {
@@ -73,7 +82,7 @@ img {
 // mixin
 @mixin breakpoint-view($breakpoint) {
     @if $breakpoint == mobile {
-        @media (638px >= width) {
+        @media (639px >= width) {
             @content;
         }
     }
@@ -299,6 +308,12 @@ section {
             line-height: 1.4;
             text-align: center;
             color: #000;
+
+            @include breakpoint-view(mobile) {
+                font-size: 33px;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
         }
     }
 
@@ -396,6 +411,14 @@ section {
             line-height: 1.6;
             text-align: center;
             margin-bottom: 50px;
+
+            @include breakpoint-view(mobile) {
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 1.5;
+                margin-bottom: 30px;
+                max-width: 268px;
+            }
         }
     }
 }
@@ -455,13 +478,7 @@ section {
     }
 }
 
-.p-right {
-    animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
-}
 
-.p-left {
-    animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
-}
 
 /* -------------------- sec-2 - start -------------------- */
 .sec-2 {
