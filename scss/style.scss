@@ -117,6 +117,7 @@ header {
     
     .mb {
         display: none;
+        height: 100%;
         
         .app-down {
             width: 76px;
@@ -130,10 +131,10 @@ header {
 
         .ham-bar {
             height: 100%;
-            padding: 0 8px;
             margin-right: -8px;
 
             .icon {
+                display: block;
                 height: 24px;
                 width: 24px;
                 min-width: 24px;
@@ -146,6 +147,10 @@ header {
                 }
             }
         }
+
+        @include breakpoint-view(mobile) {
+            display: block;
+        }
     }
     
     .menu-box {
@@ -153,6 +158,10 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        @include breakpoint-view(mobile) {
+            display: none;   
+        }
     }
     
     .menu {
@@ -210,20 +219,6 @@ header {
 
 header.border-bottom {
     border-bottom: 1px solid rgba(0,27,55,0.1);
-}
-
-header {
-    .menu-box {
-        @include breakpoint-view(mobile) {
-            display: none;   
-        }
-    }
-
-    .mb {
-        @include breakpoint-view(mobile) {
-            display: block;
-        }
-    }
 }
 /* -------------------- header - end -------------------- */
 

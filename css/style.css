@@ -100,6 +100,7 @@ header .logo a {
 }
 header .mb {
   display: none;
+  height: 100%;
 }
 header .mb .app-down {
   width: 76px;
@@ -112,10 +113,10 @@ header .mb .app-down {
 }
 header .mb .ham-bar {
   height: 100%;
-  padding: 0 8px;
   margin-right: -8px;
 }
 header .mb .ham-bar .icon {
+  display: block;
   height: 24px;
   width: 24px;
   min-width: 24px;
@@ -126,11 +127,21 @@ header .mb .ham-bar .icon svg {
   height: 100%;
   display: inline-flex;
 }
+@media (638px >= width) {
+  header .mb {
+    display: block;
+  }
+}
 header .menu-box {
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (638px >= width) {
+  header .menu-box {
+    display: none;
+  }
 }
 header .menu {
   width: 100%;
@@ -179,17 +190,6 @@ header .eng {
 
 header.border-bottom {
   border-bottom: 1px solid rgba(0, 27, 55, 0.1);
-}
-
-@media (638px >= width) {
-  header .menu-box {
-    display: none;
-  }
-}
-@media (638px >= width) {
-  header .mb {
-    display: block;
-  }
 }
 
 /* -------------------- header - end -------------------- */
