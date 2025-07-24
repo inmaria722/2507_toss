@@ -1,5 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// header border-bottom
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 0) {
+    $("header").addClass("border-bottom");
+  } else {
+    $("header").removeClass("border-bottom");
+  }
+});
+
+
 // sec-7
 gsap.to(".left-box", {
   x: -800,

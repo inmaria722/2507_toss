@@ -152,6 +152,10 @@ header .eng {
   color: #b0b8c1 !important;
 }
 
+header.border-bottom {
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+}
+
 /* -------------------- header - end -------------------- */
 /* -------------------- section - start -------------------- */
 section {
