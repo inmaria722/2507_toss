@@ -67,3 +67,95 @@ gsap.to(".item-2__right", {
     scrub: true
   }
 });
+
+
+// slideUp animation
+gsap.utils.toArray(".slide-up-0").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});
+
+gsap.utils.toArray(".slide-up-05").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});
+
+gsap.utils.toArray(".slide-up-1").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});
+
+gsap.utils.toArray(".slide-up-15").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});
+
+gsap.utils.toArray(".slide-up-2").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});
+
+gsap.utils.toArray(".slide-up-25").forEach((elem) => {
+  elem.style.animation = "none";
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top bottom",
+    once: true,
+    onEnter: () => {
+      elem.style.animation = "none";
+      void elem.offsetHeight;
+      elem.style.animation = "";
+    }
+  });
+});

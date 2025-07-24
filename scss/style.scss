@@ -38,6 +38,36 @@ img {
     margin: 0 auto;
 }
 
+.slide-up-0 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+}
+
+.slide-up-05 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+}
+
+.slide-up-1 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
+}
+
+.slide-up-15 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+}
+
+.slide-up-2 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 2s 1 normal forwards running slideUp;
+}
+
+.slide-up-25 {
+    opacity: 0;
+    animation: 0.5s ease-in-out 2.5s 1 normal forwards running slideUp;
+}
+
 /* -------------------- header - start -------------------- */
 header {
     width: 100vw;
@@ -333,8 +363,6 @@ section {
         line-height: 1.4;
         color: #191f28;
     }
-
-    animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
 }
 
 .desc {
@@ -915,12 +943,10 @@ section {
     img {
         margin-bottom: 11px;
         opacity: 0;
-        animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
     }
 
     .sec-10__title-box {
         opacity: 0;
-        animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
 
         h1 {
             font-size: 60px;
