@@ -101,6 +101,31 @@ header .logo a {
 header .mb {
   display: none;
 }
+header .mb .app-down {
+  width: 76px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 15px;
+  margin-right: 12px;
+  background-color: rgb(49, 130, 246) !important;
+  color: rgb(249, 250, 251) !important;
+}
+header .mb .ham-bar {
+  height: 100%;
+  padding: 0 8px;
+  margin-right: -8px;
+}
+header .mb .ham-bar .icon {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  color: rgb(176, 184, 193);
+}
+header .mb .ham-bar .icon svg {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
 header .menu-box {
   height: 100%;
   display: flex;
@@ -154,6 +179,17 @@ header .eng {
 
 header.border-bottom {
   border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+}
+
+@media (638px >= width) {
+  header .menu-box {
+    display: none;
+  }
+}
+@media (638px >= width) {
+  header .mb {
+    display: block;
+  }
 }
 
 /* -------------------- header - end -------------------- */
