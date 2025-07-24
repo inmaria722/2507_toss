@@ -567,6 +567,10 @@ section {
     .title-box {
         h2 {
             margin-bottom: 80px;
+
+            @include breakpoint-view(mobile) {
+                margin-bottom: 60px;
+            }
         }
     }
 
@@ -577,6 +581,10 @@ section {
         justify-content: space-between;
         opacity: 0;
         animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+
+        @include breakpoint-view(mobile) {
+            width: calc(100% + 20px);
+        }
     }
     
     .free-send, .accounts {
@@ -602,6 +610,11 @@ section {
         flex-basis: calc(50% - 30px);
         max-width: calc(50% - 30px);
 
+        @include breakpoint-view(mobile) {
+            width: 375px;
+            border: 1px solid red;
+        }
+
         p:first-child {
             white-space: nowrap;
             margin-bottom: 10px;
@@ -619,6 +632,12 @@ section {
                 width: 24px;
                 min-width: 24px;
                 margin-right: 4px;
+                font-size: inherit;
+            }
+
+            @include breakpoint-view(mobile) {
+                font-size: 15px;
+                margin-bottom: 8px;
             }
         }
 
@@ -628,6 +647,11 @@ section {
             font-weight: 700;
             line-height: 1.4;
             color: rgb(51, 61, 75);
+
+            @include breakpoint-view(mobile) {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
         }
 
         p:last-child {
@@ -635,7 +659,12 @@ section {
             font-weight: 600;
             line-height: 1.5;
             color: rgb(107, 118, 132);
+
+            @include breakpoint-view(mobile) {
+                font-size: 15px;
+            }
         }
+
     }
 }
 /* -------------------- sec-3 - end -------------------- */
