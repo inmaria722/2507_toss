@@ -721,6 +721,12 @@ section {
                 width: 100%;
                 height: 100%;
             }
+
+            @include breakpoint-view(mobile) {
+                width: 100%;
+                max-width: 375px;
+                height: auto;
+            }
         }
 
         @include breakpoint-view(mobile) {
@@ -1173,18 +1179,25 @@ section {
 /* -------------------- sec-9 - start -------------------- */
 .sec-9 {
     background-color: #f9fafb;
+    overflow: hidden;
 
     .con {
         padding: 250px 0 165px 0;
-
-        .con-inner {
-            height: auto;
-            position: relative;
-        }
-
+        height: 100%;
+        
         @include breakpoint-view(mobile) {
             padding: 100px 0;
         }
+
+        .con-inner {
+            height: 1272px;
+            position: relative;
+
+            @include breakpoint-view(mobile) {
+                height: 100%;
+            }
+        }
+
     }
 
     .title-box {
@@ -1306,9 +1319,19 @@ section {
         padding: 0 0 100px 0;
     }
 
-    img {
-        margin-bottom: 11px;
-        opacity: 0;
+    .img-box {
+        width: auto;
+        
+        img {
+            margin-bottom: 11px;
+            opacity: 0;
+            object-fit: contain;
+    
+            @include breakpoint-view(mobile) {
+                height: 600px;
+                margin-bottom: 4px;
+            }
+        }
     }
 
     .sec-10__title-box {
