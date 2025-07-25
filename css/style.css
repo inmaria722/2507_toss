@@ -891,9 +891,7 @@ section {
 @media (639px >= width) {
   .sec-7 {
     height: 665px;
-    background-size: contain;
-    background-position: center;
-    background: url(../토스/section2_4_big_mobile.png);
+    background: url(../토스/section2_4_big_mobile.png) no-repeat center center/contain;
   }
 }
 .sec-7 span {
