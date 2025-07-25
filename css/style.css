@@ -1275,6 +1275,11 @@ section {
   background: #f5f6f8;
   height: 306px;
 }
+@media (639px >= width) {
+  .sec-11 {
+    padding: 72px 0;
+  }
+}
 .sec-11 .con {
   padding: 0;
   max-width: 800px;
@@ -1291,12 +1296,26 @@ section {
   color: #333d4b;
   margin-bottom: 16px;
 }
+@media (639px >= width) {
+  .sec-11 .report-box h1 {
+    font-size: 30px;
+    color: #6b7684;
+    margin-bottom: 10px;
+  }
+}
 .sec-11 .report-box p {
   margin-bottom: 24px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: rgba(0, 19, 43, 0.58);
+}
+@media (639px >= width) {
+  .sec-11 .report-box p {
+    font-size: 17px;
+    color: #6b7684;
+    margin-bottom: 24px;
+  }
 }
 .sec-11 .report-box .p-button {
   display: inline-flex;
@@ -1305,6 +1324,11 @@ section {
 }
 .sec-11 .report-box .img-box {
   width: 240px;
+}
+@media (639px >= width) {
+  .sec-11 .report-box .img-box {
+    display: none;
+  }
 }
 
 /* -------------------- sec-11 - end -------------------- */
