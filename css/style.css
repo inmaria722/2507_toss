@@ -630,14 +630,23 @@ section {
 /* -------------------- sec-4 - start -------------------- */
 .sec-4 .con-inner {
   position: relative;
+  height: 100%;
 }
 .sec-4 .title-box {
   margin-bottom: 210px;
+}
+@media (639px >= width) {
+  .sec-4 .title-box {
+    margin: 0;
+  }
 }
 .sec-4 .phone-box {
   position: absolute;
   top: 0;
   right: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sec-4 .phone-box .phone {
   position: relative;
@@ -649,6 +658,20 @@ section {
   width: 100%;
   height: 100%;
 }
+@media (639px >= width) {
+  .sec-4 .phone-box .phone {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+  }
+}
+@media (639px >= width) {
+  .sec-4 .phone-box {
+    position: static;
+    width: 100vw;
+    margin-left: -24px;
+  }
+}
 .sec-4 span {
   display: flex;
   font-size: 48px;
@@ -656,6 +679,13 @@ section {
   line-height: 1.5;
   color: rgb(51, 61, 75);
   opacity: 0;
+}
+@media (639px >= width) {
+  .sec-4 span {
+    font-size: 28px;
+    line-height: 1.4;
+    white-space: wrap;
+  }
 }
 .sec-4 .top {
   animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
@@ -670,12 +700,15 @@ section {
 .sec-4 .gray {
   color: #8b95a1;
   margin-left: 10px;
+  opacity: 1;
 }
 .sec-4 .light-gray {
   color: #d1d6db;
   margin-left: 10px;
+  opacity: 1;
 }
 .sec-4 .desc {
+  position: static;
   animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 
