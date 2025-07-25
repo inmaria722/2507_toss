@@ -1338,14 +1338,29 @@ footer {
   background-color: #f9fafb;
   padding: 50px 0 100px;
 }
+@media (639px >= width) {
+  footer {
+    padding: 60px 40px 80px;
+  }
+}
 footer .footer-inner {
   max-width: 1064px;
   margin: auto;
   padding: 0 67px;
 }
+@media (639px >= width) {
+  footer .footer-inner {
+    padding: 0;
+  }
+}
 footer .footer__site-group-list {
   display: flex;
   padding-bottom: 50px;
+}
+@media (639px >= width) {
+  footer .footer__site-group-list {
+    flex-direction: column;
+  }
 }
 footer .footer__site-group-list .footer__site-group {
   padding-right: 20px;
@@ -1355,6 +1370,11 @@ footer .footer__site-group-list .footer__site-group {
   list-style: none;
   font-size: 15px;
   line-height: 30px;
+}
+@media (639px >= width) {
+  footer .footer__site-group-list .footer__site-group {
+    padding-bottom: 40px;
+  }
 }
 footer .footer__site-group-list .site-group-title {
   padding-bottom: 5px;
@@ -1384,6 +1404,14 @@ footer .term-wrapper {
   row-gap: 4px;
   margin: 0;
   padding: 24px 0 30px;
+}
+@media (639px >= width) {
+  footer .term-wrapper {
+    grid-template-columns: auto;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    row-gap: 6px;
+  }
 }
 footer .term-wrapper a {
   display: block;
