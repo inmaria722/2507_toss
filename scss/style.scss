@@ -748,11 +748,11 @@ section {
         line-height: 1.5;
         color: rgb(51, 61, 75);
         opacity: 0;
+        white-space: wrap;
 
         @include breakpoint-view(mobile) {
             font-size: 28px;
             line-height: 1.4;
-            white-space: wrap;
         }
     }
 
@@ -796,6 +796,10 @@ section {
 
     h2 {
         margin-bottom: 80px;
+
+        @include breakpoint-view(mobile) {
+            margin-bottom: 60px;
+        }
     }
 
     .credit-box {
@@ -815,6 +819,11 @@ section {
                 margin-bottom: 30px;
                 opacity: 0;
                 animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
+                
+                @include breakpoint-view(mobile) {
+                    width: 80px;
+                    margin-bottom: 20px;
+                }
             }
 
             p {
@@ -825,6 +834,10 @@ section {
                 margin-bottom: 10px;
                 opacity: 0;
                 animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
+                
+                @include breakpoint-view(mobile) {
+                    font-size: 24px;
+                }
             }
 
             p:last-child {
@@ -832,7 +845,15 @@ section {
                 font-weight: 600;
                 line-height: 1.5;
                 color: rgb(107, 118, 132);
+
+                @include breakpoint-view(mobile) {
+                    font-size: 15px;
+                }
             }
+        }
+
+        @include breakpoint-view(mobile) {
+            flex-direction: column;
         }
     }
 }

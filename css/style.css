@@ -679,12 +679,12 @@ section {
   line-height: 1.5;
   color: rgb(51, 61, 75);
   opacity: 0;
+  white-space: wrap;
 }
 @media (639px >= width) {
   .sec-4 span {
     font-size: 28px;
     line-height: 1.4;
-    white-space: wrap;
   }
 }
 .sec-4 .top {
@@ -720,6 +720,11 @@ section {
 .sec-5 h2 {
   margin-bottom: 80px;
 }
+@media (639px >= width) {
+  .sec-5 h2 {
+    margin-bottom: 60px;
+  }
+}
 .sec-5 .credit-box {
   display: flex;
   flex-wrap: wrap;
@@ -738,6 +743,12 @@ section {
   opacity: 0;
   animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
 }
+@media (639px >= width) {
+  .sec-5 .credit-box .credit img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}
 .sec-5 .credit-box .credit p {
   font-size: 28px;
   font-weight: 700;
@@ -747,11 +758,26 @@ section {
   opacity: 0;
   animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
+@media (639px >= width) {
+  .sec-5 .credit-box .credit p {
+    font-size: 24px;
+  }
+}
 .sec-5 .credit-box .credit p:last-child {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
   color: rgb(107, 118, 132);
+}
+@media (639px >= width) {
+  .sec-5 .credit-box .credit p:last-child {
+    font-size: 15px;
+  }
+}
+@media (639px >= width) {
+  .sec-5 .credit-box {
+    flex-direction: column;
+  }
 }
 
 /* -------------------- sec-5 - end -------------------- */
