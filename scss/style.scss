@@ -863,6 +863,22 @@ section {
 
 /* -------------------- sec-6 - start -------------------- */
 .sec-6 {
+    .title-box {
+        h2 {
+            @include breakpoint-view(mobile) {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            display: none;
+
+            @include breakpoint-view(mobile) {
+                display: block;
+            }
+        }
+    }
+    
     .phone-box-wrap {
         position: relative;
         width: 100%;
@@ -890,6 +906,12 @@ section {
             width: 100%;
             height: 100%;
         }
+
+        @include breakpoint-view(mobile) {
+            width: 100%;
+            max-width: 375px;
+            height: auto;
+        }
     }
 
     .ph-txt {
@@ -911,6 +933,10 @@ section {
             color: rgb(51, 61, 75);
             max-width: 220px;
         }
+
+        @include breakpoint-view(mobile) {
+            display: none;
+        }
     }
 
     .left-txt {
@@ -930,6 +956,12 @@ section {
         opacity: 0;
         animation: 1s ease-in-out 1.5s 1 normal forwards running slideUp;
 
+        @include breakpoint-view(mobile) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: rgb(78, 89, 104);
+        }
     }
 }
 /* -------------------- sec-6 - end -------------------- */
