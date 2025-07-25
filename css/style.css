@@ -1173,6 +1173,11 @@ section {
   padding: 100px 0 250px 0;
   background-color: #000000;
 }
+@media (639px >= width) {
+  .sec-10 {
+    padding: 0 0 100px 0;
+  }
+}
 .sec-10 img {
   margin-bottom: 11px;
   opacity: 0;
@@ -1188,6 +1193,11 @@ section {
   margin-bottom: 21px;
   text-align: center;
 }
+@media (639px >= width) {
+  .sec-10 .sec-10__title-box h1 {
+    font-size: 36px;
+  }
+}
 .sec-10 .sec-10__title-box p {
   font-size: 30px;
   font-weight: 700;
@@ -1196,6 +1206,12 @@ section {
   text-align: center;
   margin-bottom: 200px;
 }
+@media (639px >= width) {
+  .sec-10 .sec-10__title-box p {
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+}
 .sec-10 .business-box {
   display: flex;
   align-items: center;
@@ -1203,6 +1219,12 @@ section {
   width: 100%;
   opacity: 0;
   animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+}
+@media (639px >= width) {
+  .sec-10 .business-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .sec-10 .business-box li {
   width: 25%;
@@ -1213,12 +1235,23 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
 }
+@media (639px >= width) {
+  .sec-10 .business-box li {
+    margin-top: 40px;
+  }
+}
 .sec-10 .business-box li span {
   margin-bottom: 12px;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.3;
   color: #fff;
+}
+@media (639px >= width) {
+  .sec-10 .business-box li span {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 .sec-10 .business-box li p {
   max-width: 300px;
@@ -1227,6 +1260,12 @@ section {
   font-weight: 600;
   line-height: 1.6;
   color: #b0b8c1;
+}
+@media (639px >= width) {
+  .sec-10 .business-box li p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 }
 
 /* -------------------- sec-10 - end -------------------- */
