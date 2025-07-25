@@ -1494,6 +1494,7 @@ footer {
         
         @include breakpoint-view(mobile) {
             flex-direction: column;
+            padding: 0;
         }
         
         .footer__site-group {

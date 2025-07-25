@@ -1360,6 +1360,7 @@ footer .footer__site-group-list {
 @media (639px >= width) {
   footer .footer__site-group-list {
     flex-direction: column;
+    padding: 0;
   }
 }
 footer .footer__site-group-list .footer__site-group {
