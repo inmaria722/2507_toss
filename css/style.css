@@ -941,15 +941,32 @@ section {
   line-height: 1.4;
   color: #191f28;
 }
+@media (639px >= width) {
+  .sec-8 h1 {
+    font-size: 36px;
+    margin-bottom: 64px;
+  }
+}
 .sec-8 .item-title {
   margin-bottom: 24px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
 }
+@media (639px >= width) {
+  .sec-8 .item-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
 .sec-8 .item-title h2 {
   margin-bottom: 5px;
   color: #191f28;
+}
+@media (639px >= width) {
+  .sec-8 .item-title h2 {
+    margin-bottom: 3px;
+  }
 }
 .sec-8 .item-title h3 {
   color: #b0b8c1;
@@ -959,6 +976,11 @@ section {
   font-weight: 600;
   line-height: 1.5;
   color: #333d4b;
+}
+@media (639px >= width) {
+  .sec-8 .item-desc {
+    font-size: 18px;
+  }
 }
 .sec-8 img {
   opacity: 0;
@@ -983,15 +1005,31 @@ section {
   width: 100%;
   margin-bottom: 220px;
 }
+@media (639px >= width) {
+  .sec-8 .item-2 {
+    flex-direction: column;
+  }
+}
 .sec-8 .item-2 .item-2__left {
   margin-right: 40px;
 }
 .sec-8 .item-2 .item-2__left img {
   margin-bottom: 40px;
 }
+@media (639px >= width) {
+  .sec-8 .item-2 .item-2__left img {
+    max-width: 240px;
+    margin-bottom: 30px;
+  }
+}
 .sec-8 .item-2 .item-2__left .left-title {
   opacity: 0;
   transform: translateY(10px);
+}
+@media (639px >= width) {
+  .sec-8 .item-2 .item-2__left {
+    flex: 1;
+  }
 }
 .sec-8 .item-2 .item-2__right {
   margin-top: 122px;
@@ -1001,6 +1039,18 @@ section {
 .sec-8 .item-2 .item-2__right img {
   margin-bottom: 35px;
 }
+@media (639px >= width) {
+  .sec-8 .item-2 .item-2__right img {
+    margin-bottom: 30px;
+  }
+}
+@media (639px >= width) {
+  .sec-8 .item-2 .item-2__right {
+    max-width: 240px;
+    margin-top: 50px;
+    align-self: flex-end;
+  }
+}
 .sec-8 .item-3 img {
   margin-bottom: 50px;
 }
@@ -1009,6 +1059,11 @@ section {
 }
 .sec-8 .item-3 .item-text-box .item-title {
   flex: 1;
+}
+@media (639px >= width) {
+  .sec-8 .item-3 .item-text-box {
+    flex-direction: column;
+  }
 }
 
 /* -------------------- sec-8 - end -------------------- */
