@@ -79,93 +79,119 @@ gsap.to(".item-2__right", {
 });
 
 
+
 // slideUp animation
-gsap.utils.toArray(".slide-up-0").forEach((elem) => {
-  elem.style.animation = "none";
+$(document).ready(function() {
+  const $sections = $('.sec');
+  const animatedSections = new Set();
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
+  $(window).on('scroll', function() {
+    $sections.each(function(index, section) {
+      const $section = $(section);
+      if (animatedSections.has(section)) return;
+
+      const sectionTop = $section.offset().top;
+      const scrollBottom = $(window).scrollTop() + $(window).height();
+
+      if (scrollBottom >= sectionTop) {
+        $section.find('.animate-item').addClass('animated');
+        animatedSections.add(section);
+      }
+    });
   });
 });
 
-gsap.utils.toArray(".slide-up-05").forEach((elem) => {
-  elem.style.animation = "none";
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
-  });
-});
 
-gsap.utils.toArray(".slide-up-1").forEach((elem) => {
-  elem.style.animation = "none";
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
-  });
-});
 
-gsap.utils.toArray(".slide-up-15").forEach((elem) => {
-  elem.style.animation = "none";
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
-  });
-});
+// gsap.utils.toArray(".slide-up-0").forEach((elem) => {
+//   elem.style.animation = "none";
 
-gsap.utils.toArray(".slide-up-2").forEach((elem) => {
-  elem.style.animation = "none";
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
-  });
-});
+// gsap.utils.toArray(".slide-up-05").forEach((elem) => {
+//   elem.style.animation = "none";
 
-gsap.utils.toArray(".slide-up-25").forEach((elem) => {
-  elem.style.animation = "none";
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });
 
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top bottom",
-    once: true,
-    onEnter: () => {
-      elem.style.animation = "none";
-      void elem.offsetHeight;
-      elem.style.animation = "";
-    }
-  });
-});
+// gsap.utils.toArray(".slide-up-1").forEach((elem) => {
+//   elem.style.animation = "none";
+
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });
+
+// gsap.utils.toArray(".slide-up-15").forEach((elem) => {
+//   elem.style.animation = "none";
+
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });
+
+// gsap.utils.toArray(".slide-up-2").forEach((elem) => {
+//   elem.style.animation = "none";
+
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });
+
+// gsap.utils.toArray(".slide-up-25").forEach((elem) => {
+//   elem.style.animation = "none";
+
+//   ScrollTrigger.create({
+//     trigger: elem,
+//     start: "top bottom",
+//     once: true,
+//     onEnter: () => {
+//       elem.style.animation = "none";
+//       void elem.offsetHeight;
+//       elem.style.animation = "";
+//     }
+//   });
+// });

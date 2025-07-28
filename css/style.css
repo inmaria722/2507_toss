@@ -48,36 +48,6 @@ img {
   margin: 0 auto;
 }
 
-.slide-up-0 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
-}
-
-.slide-up-05 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
-}
-
-.slide-up-1 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
-}
-
-.slide-up-15 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
-}
-
-.slide-up-2 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 2s 1 normal forwards running slideUp;
-}
-
-.slide-up-25 {
-  opacity: 0;
-  animation: 0.5s ease-in-out 2.5s 1 normal forwards running slideUp;
-}
-
 /* -------------------- header - start -------------------- */
 header {
   width: 100vw;
@@ -404,6 +374,10 @@ section {
   }
 }
 
+.title-box.animated {
+  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+}
+
 .desc {
   font-size: 23px;
   font-weight: 600;
@@ -418,12 +392,15 @@ section {
   }
 }
 
+.desc.animated {
+  animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
+}
+
 .phone {
   width: 600px;
   height: 936px;
   position: absolute;
   opacity: 0;
-  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
   overflow: hidden;
 }
 .phone .screen {
@@ -446,6 +423,18 @@ section {
     max-width: 375px;
     height: auto;
   }
+}
+
+.phone.animated {
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+}
+
+.p-right.animated {
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
+}
+
+.p-lett.animated {
+  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 
 /* -------------------- sec-2 - start -------------------- */
@@ -519,7 +508,6 @@ section {
   align-items: center;
   justify-content: space-between;
   opacity: 0;
-  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-3 .send {
@@ -527,6 +515,9 @@ section {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+}
+.sec-3 .send.animated {
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-3 .free-send, .sec-3 .accounts {
   margin: 0 0 150px;
@@ -547,13 +538,15 @@ section {
   flex-basis: calc(50% - 30px);
   max-width: calc(50% - 30px);
   opacity: 0;
-  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-3 img {
     flex-basis: calc(100% - 20px);
     max-width: calc(100% - 20px);
   }
+}
+.sec-3 img.animated {
+  animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 .sec-3 .text-box {
   display: flex;
@@ -682,14 +675,16 @@ section {
     line-height: 1.4;
   }
 }
-.sec-4 .top {
+.sec-4 .top.animated {
   animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
-.sec-4 .mid {
+.sec-4 .mid.animated {
   animation: 0.5s ease-in-out 2s 1 normal forwards running slideUp;
 }
 .sec-4 .bottom {
   margin-bottom: 30px;
+}
+.sec-4 .bottom.animated {
   animation: 0.5s ease-in-out 2.5s 1 normal forwards running slideUp;
 }
 .sec-4 .gray {
@@ -704,6 +699,8 @@ section {
 }
 .sec-4 .desc {
   position: static;
+}
+.sec-4 .desc.animated {
   animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 
@@ -736,13 +733,15 @@ section {
   width: 120px;
   margin-bottom: 30px;
   opacity: 0;
-  animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-5 .credit-box .credit img {
     width: 80px;
     margin-bottom: 20px;
   }
+}
+.sec-5 .credit-box .credit img.animated {
+  animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
 }
 .sec-5 .credit-box .credit p {
   font-size: 28px;
@@ -751,12 +750,14 @@ section {
   color: rgb(51, 61, 75);
   margin-bottom: 10px;
   opacity: 0;
-  animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-5 .credit-box .credit p {
     font-size: 24px;
   }
+}
+.sec-5 .credit-box .credit p.animated {
+  animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-5 .credit-box .credit p:last-child {
   font-size: 22px;
@@ -849,9 +850,11 @@ section {
 .sec-6 .left-txt {
   top: 428px;
   justify-content: start;
+}
+.sec-6 .left-txt.animated {
   animation: 1s ease-in-out 1s 1 normal forwards running slideUp;
 }
-.sec-6 .right-txt {
+.sec-6 .right-txt.animated {
   animation: 1s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 .sec-6 .desc {
@@ -859,7 +862,6 @@ section {
   margin: 0 auto;
   text-align: center;
   opacity: 0;
-  animation: 1s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-6 .desc {
@@ -1118,6 +1120,8 @@ section {
   left: 0px;
   width: 100vw;
   color: rgb(78, 89, 104);
+}
+.sec-9 .main_pc .desc.animated {
   animation: 0.5s ease-in-out 1s 1 normal forwards running slideUp;
 }
 .sec-9 .main_pc .desc-2 {
@@ -1130,6 +1134,8 @@ section {
   width: 480px;
   color: rgb(78, 89, 104);
   opacity: 0;
+}
+.sec-9 .main_pc .desc-2.animated {
   animation: 0.5s ease-in-out 1.5s 1 normal forwards running slideUp;
 }
 .sec-9 .main_mb {
@@ -1207,6 +1213,9 @@ section {
     margin-bottom: 4px;
   }
 }
+.sec-10 .img-box img.animated {
+  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+}
 .sec-10 .sec-10__title-box {
   opacity: 0;
 }
@@ -1237,13 +1246,15 @@ section {
     margin-bottom: 100px;
   }
 }
+.sec-10 .sec-10__title-box.animated {
+  animation: 0.5s ease-in-out 0s 1 normal forwards running slideUp;
+}
 .sec-10 .business-box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   opacity: 0;
-  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 @media (639px >= width) {
   .sec-10 .business-box {
@@ -1291,6 +1302,9 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
   }
+}
+.sec-10 .business-box.animated {
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running slideUp;
 }
 
 /* -------------------- sec-10 - end -------------------- */
