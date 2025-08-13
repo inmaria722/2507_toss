@@ -284,43 +284,14 @@ section {
 }
 .sec-1 .content__btn {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  scale: 0.5;
   margin-bottom: 40px;
-  animation: 3.5s ease-in-out 0s infinite normal forwards running contentBtnUpDown;
 }
 .sec-1 .content__btn div {
-  width: 100%;
-  height: 100%;
+  width: 50px;
+  height: 50px;
 }
-@keyframes contentBtnUpDown {
-  0% {
-    opacity: 0;
-    scale: 0.5;
-    margin-bottom: 40px;
-  }
-  25% {
-    scale: 1;
-    opacity: 1;
-    margin-bottom: 30px;
-  }
-  50% {
-    scale: 1;
-    opacity: 1;
-    margin-bottom: 40px;
-  }
-  75% {
-    scale: 1;
-    opacity: 1;
-    margin-bottom: 30px;
-  }
-  100% {
-    scale: 1;
-    opacity: 0;
-    margin-bottom: 40px;
-  }
+.sec-1 .content__btn .arrow-updown {
+  width: 100%;
 }
 .sec-1 .sec-1__part-2 {
   width: 100%;
@@ -666,6 +637,12 @@ section {
     width: 100vw;
     margin-left: -24px;
   }
+}
+.sec-4 .phone-box .loan-video {
+  position: absolute;
+  left: 50%;
+  width: 57%;
+  transform: translateX(-50%);
 }
 .sec-4 span {
   display: flex;
